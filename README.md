@@ -3,6 +3,8 @@
 
 **2D semantic segmentation using UNet on UAV aerial imagery**
 
+**This project uses Dataset 1—the original release as provided by the teaching assistants. Because the raw files are very large, they are not re-uploaded to this repository. Please download Dataset 1 from the official course materials (or as instructed by the TA), then put the images and masks in the expected folders (e.g. data/imgs/ and data/masks/) before training or evaluation.
+
 _UAVScenes HKisland dataset_
 
 ---
