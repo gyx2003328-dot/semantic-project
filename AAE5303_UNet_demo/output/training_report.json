@@ -1,0 +1,75 @@
+{
+  "training_summary": {
+    "total_epochs": 10,
+    "total_images": 1356,
+    "train_images": 949,
+    "val_images": 203,
+    "test_images": 204,
+    "num_classes": 8,
+    "image_scale": 0.35,
+    "batch_size": 2,
+    "learning_rate": 0.0001,
+    "optimizer": "adamw",
+    "final_train_loss": 0.0948,
+    "final_val_dice": 0.746
+  },
+  "test_metrics": {
+    "dice_score": 88.57,
+    "miou": 80.24,
+    "fwiou": 77.44,
+    "pixel_accuracy": 86.46,
+    "mean_accuracy": 92.25
+  },
+  "per_class_results": {
+    "ground": {
+      "iou": 55.23,
+      "dice": 71.16,
+      "frequency": 20.22
+    },
+    "roof": {
+      "iou": 87.9,
+      "dice": 93.56,
+      "frequency": 1.83
+    },
+    "building": {
+      "iou": 87.85,
+      "dice": 93.53,
+      "frequency": 0.37
+    },
+    "river": {
+      "iou": 78.39,
+      "dice": 87.89,
+      "frequency": 31.07
+    },
+    "road": {
+      "iou": 84.83,
+      "dice": 91.79,
+      "frequency": 0.41
+    },
+    "green_field": {
+      "iou": 93.79,
+      "dice": 96.79,
+      "frequency": 18.1
+    },
+    "wild_field": {
+      "iou": 80.95,
+      "dice": 89.47,
+      "frequency": 27.94
+    },
+    "sedan": {
+      "iou": 72.99,
+      "dice": 84.38,
+      "frequency": 0.05
+    }
+  },
+  "class_mapping": {
+    "0": "ground",
+    "1": "roof",
+    "2": "building",
+    "4": "river",
+    "11": "road",
+    "13": "green_field",
+    "14": "wild_field",
+    "20": "sedan"
+  }
+}

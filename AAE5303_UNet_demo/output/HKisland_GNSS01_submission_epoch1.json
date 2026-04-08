@@ -1,0 +1,36 @@
+{
+  "group_name": "AMtown01Pilot",
+  "project_private_repo_url": "https://github.com/xxxxxx.git",
+  "metrics": {
+    "dice_score": 38.52,
+    "miou": 32.58,
+    "fwiou": 63.76
+  },
+  "details": {
+    "dice_score": 38.52,
+    "miou": 32.58,
+    "fwiou": 63.76,
+    "pixel_accuracy": 76.92,
+    "mean_accuracy": 38.98,
+    "iou_per_class": [
+      33.78,
+      0.07,
+      0.0,
+      69.28,
+      0.0,
+      87.43,
+      70.05,
+      0.0
+    ],
+    "dice_per_class": [
+      50.5,
+      0.14,
+      0.0,
+      81.85,
+      0.0,
+      93.29,
+      82.39,
+      0.0
+    ]
+  }
+}

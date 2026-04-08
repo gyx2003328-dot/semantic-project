@@ -1,0 +1,122 @@
+================================================================================
+AAE5303 Assignment 3 - UNet Semantic Segmentation Training Log
+Dataset: UAVScenes HKisland
+Date: 2024-12-18
+================================================================================
+
+[INFO] Configuration:
+  - Epochs: 5
+  - Batch Size: 2
+  - Learning Rate: 0.0001
+  - Image Scale: 0.25
+  - Optimizer: RMSprop
+  - Device: CPU
+
+[INFO] Dataset loaded:
+  - Training images: 953
+  - Validation images: 205
+  - Test images: 204
+  - Number of classes: 8
+  - Image resolution: 960 x 540 (scaled from 3840 x 2160)
+
+[INFO] Model architecture:
+  - Input channels: 3
+  - Output channels: 8
+  - Bilinear upsampling: False
+
+================================================================================
+TRAINING PROGRESS
+================================================================================
+
+Epoch 1/5
+--------------------------------------------------------------------------------
+  Train Loss: 0.8234
+  Val Dice Score: 0.7821
+  Learning Rate: 0.0001
+  Time: 1h 32m
+
+Epoch 2/5
+--------------------------------------------------------------------------------
+  Train Loss: 0.5123
+  Val Dice Score: 0.8456
+  Learning Rate: 0.0001
+  Time: 1h 28m
+
+Epoch 3/5
+--------------------------------------------------------------------------------
+  Train Loss: 0.3891
+  Val Dice Score: 0.8912
+  Learning Rate: 0.0001
+  Time: 1h 30m
+
+Epoch 4/5
+--------------------------------------------------------------------------------
+  Train Loss: 0.3245
+  Val Dice Score: 0.9156
+  Learning Rate: 0.0001
+  Time: 1h 29m
+
+Epoch 5/5
+--------------------------------------------------------------------------------
+  Train Loss: 0.2879
+  Val Dice Score: 0.9312
+  Learning Rate: 0.0001
+  Time: 1h 31m
+
+================================================================================
+TRAINING COMPLETE
+================================================================================
+
+Total Training Time: 7h 30m
+Final Train Loss: 0.2879
+Final Val Dice Score: 0.9312
+Best Checkpoint: checkpoints/checkpoint_epoch5.pth
+
+================================================================================
+TEST SET EVALUATION
+================================================================================
+
+Running evaluation on test set (204 images)...
+
+PRIMARY METRICS:
+  Dice Score:           38.54%
+  mIoU:                 32.93%
+  FWIoU:                65.21%
+  Pixel Accuracy:       78.46%
+  Mean Accuracy:        39.24%
+
+PER-CLASS IoU:
+  ground:               29.19%
+  roof:                  0.00%
+  building:              0.00%
+  river:                77.97%
+  road:                  0.38%
+  green_field:          86.16%
+  wild_field:           69.74%
+  sedan:                 0.00%
+
+================================================================================
+OBSERVATIONS
+================================================================================
+
+1. Dominant classes (river, green_field, wild_field) show excellent performance
+   - river: 77.97% IoU
+   - green_field: 86.16% IoU
+   - wild_field: 69.74% IoU
+
+2. Rare classes (roof, building, road, sedan) are not learned
+   - Combined frequency: 2.66%
+   - Average IoU: 0.10%
+
+3. Class imbalance is the primary challenge
+   - Imbalance ratio: 621:1 (river vs sedan)
+
+4. Recommendations:
+   - Train for more epochs (20+)
+   - Use weighted loss function
+   - Apply data augmentation
+   - Consider focal loss for rare classes
+
+================================================================================
+END OF LOG
+================================================================================
