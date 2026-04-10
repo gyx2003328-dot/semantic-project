@@ -1,0 +1,117 @@
+{
+  "training_summary": {
+    "total_epochs": 30,
+    "total_images": 5089,
+    "train_images": 3153,
+    "val_images": 556,
+    "test_images": 1380,
+    "num_classes": 15,
+    "image_scale": 0.35,
+    "batch_size": 4,
+    "learning_rate": 0.0001,
+    "optimizer": "adamw",
+    "final_train_loss": 0.0855,
+    "final_val_dice": 0.9103
+  },
+  "test_metrics": {
+    "dice_score": 88.79,
+    "miou": 81.15,
+    "fwiou": 92.15,
+    "pixel_accuracy": 95.83,
+    "mean_accuracy": 96.22
+  },
+  "per_class_results": {
+    "ground": {
+      "iou": 81.47,
+      "dice": 89.79,
+      "frequency": 18.93
+    },
+    "roof": {
+      "iou": 92.08,
+      "dice": 95.87,
+      "frequency": 9.35
+    },
+    "building": {
+      "iou": 85.92,
+      "dice": 92.43,
+      "frequency": 3.86
+    },
+    "class_3": {
+      "iou": 94.63,
+      "dice": 97.24,
+      "frequency": 1.5
+    },
+    "class_5": {
+      "iou": 78.57,
+      "dice": 88.0,
+      "frequency": 0.0
+    },
+    "class_6": {
+      "iou": 74.5,
+      "dice": 85.39,
+      "frequency": 0.02
+    },
+    "green_field": {
+      "iou": 95.84,
+      "dice": 97.88,
+      "frequency": 61.31
+    },
+    "wild_field": {
+      "iou": 91.87,
+      "dice": 95.76,
+      "frequency": 3.39
+    },
+    "class_15": {
+      "iou": 91.91,
+      "dice": 95.79,
+      "frequency": 0.1
+    },
+    "class_16": {
+      "iou": 70.31,
+      "dice": 82.57,
+      "frequency": 0.0
+    },
+    "class_17": {
+      "iou": 91.43,
+      "dice": 95.52,
+      "frequency": 0.35
+    },
+    "class_19": {
+      "iou": 95.89,
+      "dice": 97.9,
+      "frequency": 0.97
+    },
+    "sedan": {
+      "iou": 65.7,
+      "dice": 79.3,
+      "frequency": 0.16
+    },
+    "class_24": {
+      "iou": 63.83,
+      "dice": 77.92,
+      "frequency": 0.04
+    },
+    "class_25": {
+      "iou": 43.29,
+      "dice": 60.42,
+      "frequency": 0.0
+    }
+  },
+  "class_mapping": {
+    "0": "ground",
+    "1": "roof",
+    "2": "building",
+    "3": "class_3",
+    "5": "class_5",
+    "6": "class_6",
+    "13": "green_field",
+    "14": "wild_field",
+    "15": "class_15",
+    "16": "class_16",
+    "17": "class_17",
+    "19": "class_19",
+    "20": "sedan",
+    "24": "class_24",
+    "25": "class_25"
+  }
+}
