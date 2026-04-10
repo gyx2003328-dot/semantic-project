@@ -1,0 +1,9 @@
+{
+  "group_name": "GOGOGO",
+  "project_private_repo_url": "https://github.com/gyx2003328-dot/semantic-project",
+  "metrics": {
+    "dice_score": 88.79,
+    "miou": 81.15,
+    "fwiou": 92.15
+  }
+}
